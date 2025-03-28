@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Gallery Grid */
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 columns */
+            grid-template-rows: repeat(4, auto); /* 4 rows */
+            gap: 10px;
+            max-width: 90%;
+            margin: auto;
+        }
+
+        .photo-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .photo-gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Fullscreen Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exhibit.html">Back to Exhibit</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>🖼️ My Photo Gallery</h1>
+        <p>Click on an image to enlarge it.</p>
+    </header>
+
+    <section class="photo-gallery">
+        <!-- Image Thumbnails (4 rows, 5 columns) -->
+        <a href="#img1"><img src="nezuko.jpg" alt="Nezuko"></a>
+        <a href="#img2"><img src="yumkeo.jpg" alt="Yumeko"></a>
+        <a href="#img3"><img src="tanjiro.jpg" alt="Tanjiro"></a>
+        <a href="#img4"><img src="ngak.jpg" alt="Ngak"></a>
+        <a href="#img5"><img src="ngi.jpg" alt="Ngi"></a>
+        
+        <a href="#img6"><img src="Tamayo.jpg" alt="Tamayo"></a>
+        <a href="#img7"><img src="girl.jpg" alt="Girl"></a>
+        <a href="#img8"><img src="himeno.jpg" alt="Himeno"></a>
+        <a href="#img9"><img src="makima.jpg" alt="Makima"></a>
+        <a href="#img10"><img src="mikasa.jpg" alt="Mikasa"></a>
+        
+        <a href="#img11"><img src="pieck.jpg" alt="Pieck"></a>
+        <a href="#img12"><img src="blonde.jpg" alt="Blonde"></a>
+        <a href="#img13"><img src="yor.jpg" alt="Yor"></a>
+        <a href="#img14"><img src="yaiba.jpg" alt="Yaiba"></a>
+        <a href="#img15"><img src="white.jpg" alt="White"></a>
+        
+        <a href="#img16"><img src="blue winter.jpg" alt="winter"></a>
+        <a href="#img17"><img src="download.jpg" alt="feel"></a>
+        <a href="#img18"><img src="ot4.jpg" alt="ot4"></a>
+        <a href="#img19"><img src="happy winter.jpg" alt="red"></a>
+        <a href="#img20"><img src="mad.jpg" alt="mad"></a>
+    </section>
+
+    <!-- Lightbox Fullscreen View -->
+    <div id="img1" class="lightbox"><a href="#" class="close">&times;</a><img src="nezuko.jpg"></div>
+    <div id="img2" class="lightbox"><a href="#" class="close">&times;</a><img src="yumkeo.jpg"></div>
+    <div id="img3" class="lightbox"><a href="#" class="close">&times;</a><img src="tanjiro.jpg"></div>
+    <div id="img4" class="lightbox"><a href="#" class="close">&times;</a><img src="ngak.jpg"></div>
+    <div id="img5" class="lightbox"><a href="#" class="close">&times;</a><img src="ngi.jpg"></div>
+    <div id="img6" class="lightbox"><a href="#" class="close">&times;</a><img src="Tamayo.jpg"></div>
+    <div id="img7" class="lightbox"><a href="#" class="close">&times;</a><img src="girl.jpg"></div>
+    <div id="img8" class="lightbox"><a href="#" class="close">&times;</a><img src="himeno.jpg"></div>
+    <div id="img9" class="lightbox"><a href="#" class="close">&times;</a><img src="makima.jpg"></div>
+    <div id="img10" class="lightbox"><a href="#" class="close">&times;</a><img src="mikasa.jpg"></div>
+    <div id="img11" class="lightbox"><a href="#" class="close">&times;</a><img src="pieck.jpg"></div>
+    <div id="img12" class="lightbox"><a href="#" class="close">&times;</a><img src="blonde.jpg"></div>
+    <div id="img13" class="lightbox"><a href="#" class="close">&times;</a><img src="yor.jpg"></div>
+    <div id="img14" class="lightbox"><a href="#" class="close">&times;</a><img src="yaiba.jpg"></div>
+    <div id="img15" class="lightbox"><a href="#" class="close">&times;</a><img src="white.jpg"></div>
+    <div id="img16" class="lightbox"><a href="#" class="close">&times;</a><img src="blue winter.jpg"></div>
+    <div id="img17" class="lightbox"><a href="#" class="close">&times;</a><img src="download.jpg"></div>
+    <div id="img18" class="lightbox"><a href="#" class="close">&times;</a><img src="ot4.jpg"></div>
+    <div id="img19" class="lightbox"><a href="#" class="close">&times;</a><img src="happy winter.jpg"></div>
+    <div id="img20" class="lightbox"><a href="#" class="close">&times;</a><img src="mad.jpg"></div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Places to Visit</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 80%;
+            max-width: 1000px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exhibit.html">Back to Exhibit</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>My Dream Places to Visit</h1>
+    </header>
+
+    <main>
+        <p>
+            I have always dreamed of traveling to <strong>Greece, the Maldives, and Egypt</strong>, 
+            each offering a unique and unforgettable experience. Greece captivates me with its stunning 
+            islands, ancient ruins, and rich mythology. Walking through the streets of Santorini or 
+            exploring the Parthenon would be a dream come true. 
+        </p>
+        
+        <p>
+            The Maldives, with its crystal-clear waters and overwater bungalows, seems like the perfect 
+            place to relax and escape into paradise. Meanwhile, Egypt’s pyramids, temples, and deep historical 
+            significance fascinate me. I would love to see the Great Pyramid of Giza and cruise along the Nile. 
+        </p>
+        
+        <p>
+            Visiting these three incredible destinations is a goal I hope to achieve one day!
+        </p>
+
+        <!-- Image Section with Image Mapping -->
+        <figure>
+            <img src="destinations.jpg" alt="Beautiful Destinations" usemap="#destinations">
+            <map name="destinations">
+                <!-- Greece (Rectangle) -->
+                <area shape="rect" coords="50,150,300,400" href="greece.html" alt="Greece">
+                
+                <!-- Maldives (Circle) -->
+                <area shape="circle" coords="550,300,120" href="maldives.html" alt="Maldives">
+                
+                <!-- Egypt (Polygon) -->
+                <area shape="poly" coords="750,150,900,300,750,450,600,300" href="egypt.html" alt="Egypt">
+            </map>
+        </figure>
+    </main>
+</body>
+</html>
